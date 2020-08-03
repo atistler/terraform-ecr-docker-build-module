@@ -17,9 +17,7 @@ else
 fi
 
 if [ "$aws_profile" != "" ]; then
-  aws_extra_flags="--profile $aws_profile"
-else
-  aws_extra_flags=""
+  aws_extra_flags="$aws_extra_flags --profile $aws_profile"
 fi
 
 # Check that aws is installed
