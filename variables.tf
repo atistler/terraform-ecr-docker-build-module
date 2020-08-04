@@ -15,12 +15,6 @@ variable "aws_region" {
   default     = ""
 }
 
-variable "aws_profile" {
-  type        = string
-  description = "AWS profile"
-  default     = ""
-}
-
 variable "ecr_repository_url" {
   type        = string
   description = "Full url for the ecr repository"
